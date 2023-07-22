@@ -1,0 +1,5 @@
+**/node_modules/*
+**/.next/*
+src/*.test.*
+*.config.js
+*.d.ts
