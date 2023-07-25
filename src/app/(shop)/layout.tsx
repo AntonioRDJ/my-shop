@@ -18,15 +18,15 @@ export default function ShopLayout({ children }: PropsWithChildren) {
             <p>cart</p>
           </div>
         </div>
-        <div className="flex justify-between py-2 px-12 bg-secondary-300">categories</div>
+        {/* <div className="flex justify-between py-2 px-12 bg-secondary-300">categories</div> */}
       </header>
       <div className="flex-grow">
         {children}
       </div>
       <footer className="flex justify-around py-6 px-24 bg-primary-400">
-        <div>Sobre</div>
-        <div>Pagamento</div>
-        <div>Ajuda</div>
+        <div>About</div>
+        <div>Payment</div>
+        <div>Help</div>
       </footer>
     </section>
   );

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1",
+    "title": "Motorola Edge 40",
+    "price": 3899.1,
+    "images": {
+      "small": "https://images5.kabum.com.br/produtos/fotos/472325/smartphone-motorola-edge-40-5g-256gb-8gb-ram-octa-core-camera-50mp-tela-6-55-viva-magenta-pay40047br_1689018221_m.jpg",
+      "medium": "https://images.kabum.com.br/produtos/fotos/472325/smartphone-motorola-edge-40-5g-256gb-8gb-ram-octa-core-camera-50mp-tela-6-55-viva-magenta-pay40047br_1689018221_g.jpg"
+    }
+  },
+  {
+    "id": "2",
+    "title": "Console Sony Playstation 5",
+    "price": 4099.99,
+    "images": {
+      "small": "https://images0.kabum.com.br/produtos/fotos/238670/console-sony-playstation-5-edicao-digital_1634132113_m.jpg",
+      "medium": "https://images.kabum.com.br/produtos/fotos/238670/console-sony-playstation-5-edicao-digital_1634132113_g.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Console Microsoft Xbox Series S 512GB",
+    "price": 1896,
+    "images": {
+      "small": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/200089/Console-Microsoft-Xbox-Series-S-512GB-Branco-RRS-00006_1689348497_m.jpg",
+      "medium": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/200089/Console-Microsoft-Xbox-Series-S-512GB-Branco-RRS-00006_1689348495_g.jpg"
+    }
+  }
+]
