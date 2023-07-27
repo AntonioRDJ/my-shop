@@ -1,4 +1,5 @@
 
 export const Config = {
-  API_URL: process.env.NEXT_PUBLIC_BLOOM_API_URL ?? "http://localhost:3000",
+  APP_URL: process.env.NEXT_PUBLIC_BLOOM_APP_URL ?? "http://localhost:3000",
+  DUMMYJSON_URL: process.env.NEXT_PUBLIC_DUMMYJSON_URL ?? "https://dummyjson.com",
 };

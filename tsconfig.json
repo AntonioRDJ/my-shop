@@ -12,6 +12,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "moduleDetection": "force", // https://github.com/vercel/next.js/discussions/50684#discussioncomment-6071330
     "jsx": "preserve",
     "incremental": true,
     "plugins": [

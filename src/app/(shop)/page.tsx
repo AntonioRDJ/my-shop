@@ -1,3 +1,4 @@
+import productService from "@/service/product/product.service";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -7,14 +8,24 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  // const [repo, user] = await Promise.all([getRepo(), getUser()]);
+  const response = await productService.getAllProducts();
+  if(!response) {
+    return "Request error"
+  }
+  const { products } = response;
   return (
     <div>
       <h2>All products</h2>
-      <p>my shop home</p>
-      {/* <h1>Repo name {repo.full_name}</h1>
-      <h1>User name {user.name}</h1> */}
-      <Link href="/product/123">Go to Product</Link>
+      <br/>
+      <div>
+        {products.map(product => (
+          <Link key={product.id} href={`/products/${product.id}`}>
+            <p>Title: {product.title}</p>
+            <p>Price: {product.price}</p>
+            <br/>
+          </Link>
+        ))}
+      </div>
     </div>
   )
 }
