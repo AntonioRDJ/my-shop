@@ -1,3 +1,4 @@
+import { Button } from "@/components/button/button";
 import productService from "@/service/product/product.service";
 import { Metadata, ResolvingMetadata } from "next";
 import Link from "next/link";
@@ -38,6 +39,11 @@ export default async function ProductPage({ params }: Props) {
           <p>Title: {product.title}</p>
           <p>Price: {product.price}</p>
       </div>
+      <Button>Test Button</Button>
+      <Button className="w-20 h-20">Test Button</Button>
+      <Button success>Test Button</Button>
+      <Button size="sm">Test Button</Button>
+      <Button size="xl">Test Button</Button>
     </div>
   )
 }

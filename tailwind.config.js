@@ -16,6 +16,11 @@ module.exports = {
       colors: {
         primary: colors.sky,
         secondary: colors.amber,
+        terciary: colors.teal,
+        success: colors.emerald,
+        warning: colors.yellow,
+        error: colors.red,
+        text: colors.zinc,
       }
     },
   },
