@@ -1,3 +1,4 @@
+import { CarouselHome } from "@/components/carouselHome/carouselHome";
 import productService from "@/service/product/product.service";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -14,7 +15,11 @@ export default async function Home() {
   }
   const { products } = response;
   return (
-    <div>
+    <section>
+      <header>
+        <CarouselHome slides={[{id: "slide 1"}, {id: "slide 2"}, {id: "slide 3"}, {id: "slide 4"}, {id: "slide 5"}, {id: "slide 6"}]} />
+      </header>
+      <div></div>
       <h2>All products</h2>
       <br/>
       <div>
@@ -26,6 +31,6 @@ export default async function Home() {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
