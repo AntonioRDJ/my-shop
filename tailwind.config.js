@@ -20,7 +20,6 @@ module.exports = {
         success: colors.emerald,
         warning: colors.yellow,
         error: colors.red,
-        text: colors.zinc,
       }
     },
   },

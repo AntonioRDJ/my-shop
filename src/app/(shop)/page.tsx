@@ -14,10 +14,14 @@ export default async function Home() {
     return "Request error"
   }
   const { products } = response;
+  const biggestDiscountProducts = products.sort((a, b) => b.discountPercentage - a.discountPercentage).slice(0, 12);
+  console.log("biggestDiscountProducts ", biggestDiscountProducts.length);
+  
   return (
     <section>
-      <header>
-        <CarouselHome slides={[{id: "slide 1"}, {id: "slide 2"}, {id: "slide 3"}, {id: "slide 4"}, {id: "slide 5"}, {id: "slide 6"}]} />
+      <header className="px-6">
+        <h2 className="text-3xl text-zinc-900 font-bold mt-6 mb-4 text-center">Best Deals</h2>
+        <CarouselHome slides={biggestDiscountProducts} />
       </header>
       <div></div>
       <h2>All products</h2>
